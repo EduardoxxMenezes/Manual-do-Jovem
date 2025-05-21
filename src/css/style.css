@@ -1,0 +1,163 @@
+html,body {
+  height: 93.2%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+}
+
+#container {
+  position: relative;
+  height: 100%;
+  background-color: #111827;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#botoes {
+  position: absolute;
+  flex-direction: column;
+  height: 65%;
+  width: 45%;
+  left: 50%;
+  background-color: #dadbe2;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+button {
+  margin-bottom: 18.5%;
+  justify-content: center;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  width: 50%;
+}
+
+#usuario {
+  position: absolute;
+  left: 56%;
+  top: 25%;
+  height: 8%;
+  width: 33%;
+  z-index: 1;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 1px 1px 0px rgb(40, 40, 40);
+}
+
+#senha {
+  position: absolute;
+  left: 56%;
+  top: 35%;
+  height: 8%;
+  width: 33%;
+  z-index: 1;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 1px 1px 0px;
+}
+
+#entrarConta {
+  position: absolute;
+  height: 14%;
+  width: 80%;
+  bottom: 9%;
+  left: 10%;
+  background-color: #3b82f6;
+  box-shadow: 1px 1px 0px black;
+  transition: transform 0.5s;
+}
+
+#entrarConta:hover  {
+  transform: translateZ(10px) scale(0.95);
+  background-color: #2662c2;
+}
+
+#criarConta {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  box-shadow: 1px 1px 0px black;
+  background-color: #10b981;
+  transition: transform 0.5s;
+}
+
+
+#criarConta:hover {
+  transform: translateZ(10px) scale(0.95);
+  background-color: #0aa874;
+}
+
+#outraOpcao {
+  position: absolute;
+  left: 48%;
+  bottom: 26%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  background-color: #606975;
+  color: white;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+#Titulo {
+  position: absolute;
+  color: #F9FAFB;
+  font-size: 50px;
+  bottom: 40%;
+  right: 60%;
+}
+
+#breveDescricao {
+  position: absolute;
+  color: #7d8995;
+  font-size: 20px;
+  bottom: 30%;
+  right: 53%;
+}
+
+figure{
+  position: absolute;
+  right: 65%;
+  bottom: 55%;
+}
+
+img{
+  width: 55%;
+  height: 55%;
+}
+
+#esquecisenha{
+  position: absolute;
+  left: 67%;
+  bottom: 33%;
+  z-index: 1;
+  color: rgb(105, 3, 3);
+}
+
+#esquecisenha:hover{
+  color: rgb(174, 6, 6);
+}
