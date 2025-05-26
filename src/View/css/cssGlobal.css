@@ -1,0 +1,30 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #111827;
+}
+
+#Titulo {
+  color: #f9fafb;
+  font-size: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+  }
+
+footer {
+  display: flex;
+  background-color: #606975;
+  color: white;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}

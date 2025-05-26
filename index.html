@@ -1,69 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manual do Jovem</title>
-    <link rel="stylesheet" href="./src/View/css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <div
-      class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center text-center text-white p-3 px-3"
-    >
-      <div class="row w-100 justify-content-center align-items-center">
-        <div class="col-lg-5 mb-4">
-          <div class="d-flex flex-column align-items-center">
-            <figure>
-              <img src="./src/View/img/logo.png" alt="" />
-            </figure>
-            <h1 class="fw-bold">Manual do Jovem</h1>
-            <p class="text-secondary">
-              Projeto para integrar o jovem à vida adulta de maneira mais fácil
-              <br />
-              através de artigos para a parte pessoal, profissional e
-              financeira.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="login-container">
-            <form>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Senha"
-                />
-              </div>
-              <div class="d-grid mb-2">
-                <button type="submit" class="btn btn-primary">Entrar</button>
-              </div>
-              <div class="text-end mb-3">
-                <a href="#" class="forgot-link">Esqueci a senha</a>
-              </div>
-              <hr />
-              <p>Ou</p>
-              <div class="d-grid">
-                <a href="#" class="btn btn-success">Começar agora!</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual do Jovem</title>
+  <link rel="stylesheet" href="./src/View/css/index.css">
+</head>
+<body>
+  <main>
+    <div id="container">
+    <div class="infos" id="filho1">
+      <figure>
+        <img src="/src/View/img/logo.png" alt="" />
+      </figure>
+      <h1 id="Titulo">
+        Manual do Jovem
+      </h1>
+      <p id="breveDescricao">
+        Integrando o jovem à vida adulta de maneira mais facil <br>
+        através de artigos para a vida pessoal, financeira e profissional.<br>
+      </p>
     </div>
 
-    <footer class="footer mt-auto">
-      © 2025 Desenvolvido por TDS. Todos os direitos reservados.
-    </footer>
+      <div class="infos" id="filho2">
+        <input type="text" id="usuario">
+        <label for="usuario"> Login </label>
+        <input type="text" id="senha">
+        <label for="senha"> Senha </label>
+        <button id="entrarConta">Entrar</button>
+        <p id="outraOpcao">Ou</p>
+        <button id="criarConta">Começar agora!</button>
+        <a id="esquecisenha" href="/esqueciSenha.html">Esqueci a senha<a>
+      </div>
+  </main>
+</div>
+  <footer>
+    <p>&copy; 2025 Desenvolvido por TDS. Todos os direitos reservados.</p>
+  </footer>
+  <script src="./src/js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
