@@ -1,139 +1,153 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+
 #container {
-  background-color: black;
+  background-color: #111827;
   height: 100%;
+  width: 100%;
   display: flex;
-  gap: 20px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-#filho2 {
-  width: 500px;
-  height: 350px;
-  background-color: red;
-}
-
-main{
+main {
   height: 100%;
-  width: 100%;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  margin: 0%;
-  padding: 0%;
-  background-color: #111827;
-}
-
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-
-button {
-  margin-top: 4%;
-  margin-left: 24%;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: 45%;
-  background-color: #dadbe2;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5%;
-  padding: 2%;
-}
-
-
-#usuario {
-  height: 8%;
-  width: 33%;
-  z-index: 1;
-  border-radius: 8px;
-  border: 0;
-  box-shadow: 1px 1px 0px rgb(40, 40, 40);
-}
-
-#senha {
-  margin-top: 15px;
-  height: 8%;
-  width: 33%;
-  z-index: 1;
-  border-radius: 8px;
-  border: 0;
-  box-shadow: 1px 1px 0px;
-}
-
-#entrarConta {
-  margin-top: 5%;
-  height: 14%;
-  width: 80%;
-  border-radius: 8x;
-  background-color: #3b82f6;
-  box-shadow: 1px 1px 0px black;
-  transition: transform 0.5s;
-}
-
-#entrarConta:hover {
-  transform: translateZ(10px) scale(0.95);
-  background-color: #2662c2;
-}
-
-#criarConta {
-  box-shadow: 1px 1px 0px black;
-  background-color: #10b981;
-  transition: transform 0.5s;
-}
-
-#criarConta:hover {
-  transform: translateZ(10px) scale(0.95);
-  background-color: #0aa874;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-footer {
-  display: flex;
-  background-color: #606975;
-  color: white;
-  height: 10%;
-  justify-content: center;
-  align-items: center;
-}
-
-#Titulo {
-  color: #f9fafb;
-  font-size: 50px;
-}
-
-#breveDescricao {
-  color: #7d8995;
-  font-size: 20px;
-}
-
-#inputs {
-  width: 20%;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-}
-
-img {
-  width: 10%;
-  height: 10%;
 }
 
 #esquecisenha {
   z-index: 1;
-  color: rgb(105, 3, 3);
+  color: rgb(172, 8, 8);
 }
 
 #esquecisenha:hover {
   color: rgb(174, 6, 6);
+}
+
+img {
+  width: 19%;
+  height: auto;
+}
+
+figure {
+  text-align: center;
+}
+
+#breveDescricao {
+  font-size: 15px;
+  color: #7d8995;
+  text-align: center;
+}
+
+#Titulo {
+  color: #f9fafb;
+  font-size: auto;
+  text-align: center;
+}
+
+#filho1 {
+  margin-right: 40px;
+  align-items: center;
+}
+
+#filho2 {
+  width: 40%;
+  height: 40%;
+  background-color: rgb(186, 178, 178);
+  border-radius: 5%;
+  text-align: center;
+}
+
+button { background-color: #6152cd; /* Roxo azulado */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
+}
+
+button:hover {
+  background-color: #342795;
+    transform: scale(1.05);
+}
+
+
+#usuario,
+#senha,
+#entrarConta,
+#criarConta {
+  display: block;
+  margin: 1.8% auto;
+  font-size: auto;
+  width: 80%;
+}
+
+#usuario,
+#senha {
+  height: 8.5%;
+  border-radius: 8px;
+  border: none;
+}
+
+#entrarConta,
+#criarConta {
+  overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #filho1 {
+    margin-right: 0;
+
+  }
+
+  #filho2 {
+    height: 30% !important; 
+    width: 70% !important;
+  }
+
+  #breveDescricao {
+    font-size: 100% !important;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  #breveDescricao {
+    font-size: 200%;
+  }
+
+  #filho2 {
+    height: 21%;
+    width: 70%;
+  }
+}
+
+@media  (min-width: 1024px) and (min-height: 600px) {
+  img {
+    width: 12%;
+    height: auto;
+  }
+  #filho2 {
+    margin-bottom: 6%;
+    height: 44%;
+    width: 65%;
+  }
 }
